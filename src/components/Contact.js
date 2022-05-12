@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState} from "react";
 import emailjs from "@emailjs/browser";
 import { Icon } from "@iconify/react";
 import phoneFilled from "@iconify/icons-carbon/phone-filled";
@@ -11,7 +11,7 @@ const Contact = () => {
     email: "",
     message: "",
   });
-  const [contactSent, setContactSent] = useState(false);
+  // const [contactSent, setContactSent] = useState(false);
   const handleChange = (e) => {
     e.preventDefault();
     const { id, value } = e.target;
